@@ -11,9 +11,9 @@
         padding: 0px;
       }
       #banner{
-        border: 1px solid red;
+        
         width: 80%;
-        height: 200px;
+        /* height: 200px; */
         margin: auto;
         background-color: blue;
         border-radius: 10px;
@@ -28,20 +28,27 @@
         padding-left: 40px;
         margin-top: -30px;
         color: white;
+        font-size: 12px;
       }
       button{
         margin-left: 40px;
         background-color: white;
         border-radius: 5px;
         color: black;
+        border: transparent;
+        padding: 5px 5px 5px 5px;
       }
       #banner>div+div>img{
-        width: 300px;
+        width: 100%;
+        height: auto;
+      }
+      #banner>div+div{
+        width: 30%;
+        height: auto;
         margin-left: 500px;
       }
       #services{
         width:80%;
-        border: 1px solid red;
         margin: auto;
         display: grid;
         grid-template-columns:repeat(6,1fr);
@@ -57,10 +64,13 @@
       #services>div>p{
         color: gray;
       }
+      #services>div>h3{
+        font-size: 22px;
+      }
       #services>div>img{
-        background-color: aqua;
-        width: 100px;
-        padding:20px 20px 20px 20px;
+        background-color: rgb(62, 160, 230);
+        width: 146px;
+        padding:20px 20px 0px 20px;
       }
 
 
@@ -69,19 +79,24 @@
         width: 80%;
         text-align: center;
         margin: auto;
-        border: 1px solid red;
-        /* height: 700px; */
         margin-top: 20px;
         
       }
       #works>div{
-          border: 1px solid red;
           display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, auto);
-        gap: 20px;
+        gap: 30px;
         margin-top: 20px;
         
+      }
+      #works>div>div>h4{
+           margin-left: -207px;
+      }
+      #works>div>div>p{
+           margin-left: 0px;
+           font-size: 14px;
+           margin-bottom: 20px;
       }
       #works>div>div>img{
         width: 100%;
@@ -97,6 +112,10 @@
         #banner{
           flex-direction: column;
         }
+        #banner>div+div{
+          flex-direction: column;
+        
+      }
         #services{
           grid-template-columns:repeat(3,1fr);
         grid-template-rows: repeat(2,auto) ;
@@ -128,7 +147,7 @@
       <div id="banner">
         <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
         <div>
-          <h4>you are in safe hand</h4>
+          <h4>You are in safe hand</h4>
           <p>choose the expert in end to end sugical care</p>
           <button>Know More</button>
         </div>
